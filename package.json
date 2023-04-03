@@ -1,6 +1,6 @@
 {
   "name": "zenith-ui",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Responsive and accessible React UI components built with React and styled-components",
   "scripts": {
     "rollup": "prettier --write . && rollup -c",
