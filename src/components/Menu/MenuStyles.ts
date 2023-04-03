@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { MenuProps } from "./Menu"
-import { MenuListProps } from "./MenuList"
-import { MenuButtonProps } from "./MenuButton"
-import { MenuItemProps } from "./MenuItem"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { MenuProps } from "./Menu";
+import { MenuListProps } from "./MenuList";
+import { MenuButtonProps } from "./MenuButton";
+import { MenuItemProps } from "./MenuItem";
+import { ZenithContextType } from "../../utils";
 
 export const MenuMain = styled.div<MenuProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -29,7 +29,7 @@ export const MenuMain = styled.div<MenuProps & { zenith: ZenithContextType }>`
   border-radius: ${(props) => props.radius || "0.7rem"};
 
   position: relative;
-`
+`;
 
 export const List = styled.ul<MenuListProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -67,7 +67,7 @@ export const List = styled.ul<MenuListProps & { zenith: ZenithContextType }>`
   position: absolute;
   top: calc(100% + 5px);
   left: 0;
-`
+`;
 // prettier-ignore
 export const Button = styled.button<MenuButtonProps & { zenith: ZenithContextType }>`
 	width: ${(props) => props.size?.width || ''};
@@ -126,4 +126,4 @@ export const Item = styled.li<MenuItemProps & { zenith: ZenithContextType }>`
   padding-bottom: ${(props) => props.padding?.bottom || props.padding?.y || ""};
 
   border-radius: ${(props) => props.radius || "0.7rem"};
-`
+`;

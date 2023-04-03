@@ -1,10 +1,10 @@
-import styled from "styled-components"
-import { TabsProps } from "./Tabs"
-import { ListProps } from "./TabsList"
-import { SingleTabProps } from "./Tab"
-import { PanelsProps } from "./TabPanels"
-import { PanelProps } from "./Panel"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { TabsProps } from "./Tabs";
+import { ListProps } from "./TabsList";
+import { SingleTabProps } from "./Tab";
+import { PanelsProps } from "./TabPanels";
+import { PanelProps } from "./Panel";
+import { ZenithContextType } from "../../utils";
 
 export const Main = styled.div<TabsProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "50rem"};
@@ -33,7 +33,7 @@ export const Main = styled.div<TabsProps & { zenith: ZenithContextType }>`
   border: 1px solid
     ${(props) => props.color || props.zenith.colors.bg_secondary};
   border-radius: ${(props) => props.radius || "0.7rem"};
-`
+`;
 
 export const List = styled.ul<ListProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -65,7 +65,7 @@ export const List = styled.ul<ListProps & { zenith: ZenithContextType }>`
   gap: ${(props) => props.gap || "1rem"};
 
   border-bottom: 1px solid ${(props) => props.font?.color};
-`
+`;
 
 export const ListItem = styled.li<
   SingleTabProps & { active: boolean } & { zenith: ZenithContextType }
@@ -104,7 +104,7 @@ export const ListItem = styled.li<
   &:active {
     background-color: rgba(255, 255, 255, 0.16);
   }
-`
+`;
 
 export const Panels = styled.div<PanelsProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -130,7 +130,7 @@ export const Panels = styled.div<PanelsProps & { zenith: ZenithContextType }>`
   padding-top: ${(props) => props.padding?.top || props.padding?.y || ""};
   padding-bottom: ${(props) => props.padding?.bottom || props.padding?.y || ""};
   padding: ${(props) => props.padding?.p || "1rem"};
-`
+`;
 
 export const Panel = styled.div<PanelProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -156,4 +156,4 @@ export const Panel = styled.div<PanelProps & { zenith: ZenithContextType }>`
   padding-top: ${(props) => props.padding?.top || props.padding?.y || ""};
   padding-bottom: ${(props) => props.padding?.bottom || props.padding?.y || ""};
   padding: ${(props) => props.padding?.p || "1rem"};
-`
+`;

@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { props } from "./Modal"
-import { props as HeaderProps } from "./ModalHeader"
-import { props as BodyProps } from "./ModalBody"
-import { props as FooterProps } from "./ModalFooter"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { props } from "./Modal";
+import { props as HeaderProps } from "./ModalHeader";
+import { props as BodyProps } from "./ModalBody";
+import { props as FooterProps } from "./ModalFooter";
+import { ZenithContextType } from "../../utils";
 
 export const Section = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
@@ -14,7 +14,7 @@ export const Section = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-`
+`;
 
 export const Center = styled.section`
   position: fixed;
@@ -22,7 +22,7 @@ export const Center = styled.section`
   left: 50%;
   z-index: 10;
   transform: translate(-50%, -50%);
-`
+`;
 
 export const ModalBox = styled.div<props & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "90vw"};
@@ -57,14 +57,14 @@ export const ModalBox = styled.div<props & { zenith: ZenithContextType }>`
         ? props.zenith.colors.bg_secondary
         : "none"};
   }
-`
+`;
 
 export const Header = styled.header<HeaderProps>`
   font-size: ${(props) => props.font?.size || "3rem"};
   color: ${(props) => props.font?.color || "#fff"};
   font-weight: bold;
   margin-bottom: 2rem;
-`
+`;
 
 export const Body = styled.section<BodyProps>`
   height: 100%;
@@ -72,7 +72,7 @@ export const Body = styled.section<BodyProps>`
   align-items: flex-start;
   flex-direction: column;
   justify-content: ${(props) => (props.center ? "center" : "flex-end")};
-`
+`;
 
 export const Footer = styled.footer<FooterProps>`
   font-size: ${(props) => props.font?.size || "2rem"};
@@ -81,7 +81,7 @@ export const Footer = styled.footer<FooterProps>`
   margin-top: 2rem;
   display: flex;
   align-items: end;
-`
+`;
 
 export const Close = styled.span`
   position: absolute;
@@ -90,4 +90,4 @@ export const Close = styled.span`
   left: 97.5%;
   /* right: 0; */
   top: 1rem;
-`
+`;

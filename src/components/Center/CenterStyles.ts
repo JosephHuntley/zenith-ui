@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import { CenterProps } from "./Center"
-import { SquareProps } from "./CenterSquare"
-import { CircleProps } from "./CenterCircle"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { CenterProps } from "./Center";
+import { SquareProps } from "./CenterSquare";
+import { CircleProps } from "./CenterCircle";
+import { ZenithContextType } from "../../utils";
 
 export const Outer = styled.div<CenterProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "100%"};
@@ -28,7 +28,7 @@ export const Outer = styled.div<CenterProps & { zenith: ZenithContextType }>`
   padding: ${(props) => props.padding?.p || ""};
 
   border-radius: ${(props) => props.radius || ""};
-`
+`;
 
 export const Inner = styled.div`
   width: 100%;
@@ -45,7 +45,7 @@ export const Inner = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const OuterSquare = styled.div<
   SquareProps & { zenith: ZenithContextType }
@@ -71,7 +71,7 @@ export const OuterSquare = styled.div<
   padding-top: ${(props) => props.padding?.top || props.padding?.y || ""};
   padding-bottom: ${(props) => props.padding?.bottom || props.padding?.y || ""};
   padding: ${(props) => props.padding?.p || ""};
-`
+`;
 
 export const OuterCircle = styled.div<
   CircleProps & { zenith: ZenithContextType }
@@ -99,4 +99,4 @@ export const OuterCircle = styled.div<
   padding: ${(props) => props.padding?.p || ""};
 
   border-radius: ${(props) => props.radius || "30rem"};
-`
+`;

@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { CardProps } from "./Card"
-import { HeaderProps } from "./CardHeader"
-import { BodyProps } from "./CardBody"
-import { FooterProps } from "./CardFooter"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { CardProps } from "./Card";
+import { HeaderProps } from "./CardHeader";
+import { BodyProps } from "./CardBody";
+import { FooterProps } from "./CardFooter";
+import { ZenithContextType } from "../../utils";
 
 export const Main = styled.div<CardProps & { zenith: ZenithContextType }>`
   height: ${(props) =>
@@ -67,7 +67,7 @@ export const Main = styled.div<CardProps & { zenith: ZenithContextType }>`
     background-color: ${(props) =>
       props.variant === "hover" ? "transparent" : "none"};
   }
-`
+`;
 
 export const Header = styled.header<
   HeaderProps & { zenith: ZenithContextType }
@@ -93,7 +93,7 @@ export const Header = styled.header<
   padding-top: ${(props) => props.padding?.top || props.padding?.y || ""};
   padding-bottom: ${(props) => props.padding?.bottom || props.padding?.y || ""};
   padding: ${(props) => props.padding?.p || "1rem"};
-`
+`;
 
 export const Body = styled.div<BodyProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -124,7 +124,7 @@ export const Body = styled.div<BodyProps & { zenith: ZenithContextType }>`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-`
+`;
 
 export const Footer = styled.footer<
   FooterProps & { zenith: ZenithContextType }
@@ -160,4 +160,4 @@ export const Footer = styled.footer<
   display: flex;
   flex-direction: column;
   justify-content: end;
-`
+`;

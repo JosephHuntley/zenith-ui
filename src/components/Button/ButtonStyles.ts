@@ -1,6 +1,6 @@
-import { ZenithContextType } from "../../utils"
-import styled from "styled-components"
-import { ButtonProps } from "./Button"
+import { ZenithContextType } from "../../utils";
+import styled from "styled-components";
+import { ButtonProps } from "./Button";
 
 export const Main = styled.button<ButtonProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -50,4 +50,4 @@ export const Main = styled.button<ButtonProps & { zenith: ZenithContextType }>`
         ? props.zenith.colors.bg_secondary
         : "none"};
   }
-`
+`;

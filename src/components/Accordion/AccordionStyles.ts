@@ -1,10 +1,10 @@
-import styled from "styled-components"
-import { AccordionProps } from "./Accordion"
-import { ItemProps } from "./AccordionItem"
-import { HeaderProps } from "./AccordionHeader"
-import { PanelProps } from "./AccordionPanel"
-import { AiOutlineDown, AiOutlineUp } from "react-icons/ai"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { AccordionProps } from "./Accordion";
+import { ItemProps } from "./AccordionItem";
+import { HeaderProps } from "./AccordionHeader";
+import { PanelProps } from "./AccordionPanel";
+import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { ZenithContextType } from "../../utils";
 
 export const Main = styled.section<
   AccordionProps & { zenith: ZenithContextType }
@@ -40,7 +40,7 @@ export const Main = styled.section<
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
-`
+`;
 
 export const Item = styled.article<ItemProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "100% "};
@@ -63,7 +63,7 @@ export const Item = styled.article<ItemProps & { zenith: ZenithContextType }>`
   display: flex;
   flex-direction: column;
   align-content: center;
-`
+`;
 
 export const Header = styled.header<
   HeaderProps & { zenith: ZenithContextType }
@@ -89,7 +89,7 @@ export const Header = styled.header<
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-`
+`;
 
 export const Panel = styled.div<PanelProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "100%"};
@@ -112,7 +112,7 @@ export const Panel = styled.div<PanelProps & { zenith: ZenithContextType }>`
 
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const UpArrow = styled(AiOutlineUp)<
   HeaderProps & { zenith: ZenithContextType }
@@ -120,7 +120,7 @@ export const UpArrow = styled(AiOutlineUp)<
   width: ${(props) => props.icon?.size || "1.5rem"};
   height: ${(props) => props.icon?.size || "1.5rem"};
   color: ${(props) => props.icon?.color || props.zenith.colors.text_primary};
-`
+`;
 
 export const DownArrow = styled(AiOutlineDown)<
   HeaderProps & { zenith: ZenithContextType }
@@ -128,4 +128,4 @@ export const DownArrow = styled(AiOutlineDown)<
   width: ${(props) => props.icon?.size || "1.5rem"};
   height: ${(props) => props.icon?.size || "1.5rem"};
   color: ${(props) => props.icon?.color || props.zenith.colors.text_primary};
-`
+`;

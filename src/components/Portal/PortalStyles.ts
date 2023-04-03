@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const PortalContainer = styled.div<{ zIndex?: string }>`
   width: 100%;
@@ -11,4 +11,4 @@ export const PortalContainer = styled.div<{ zIndex?: string }>`
   /* Chakra UI Faced issues that made the app unusable with bottom */
   bottom: 0;
   z-index: ${(props) => props.zIndex || "0"};
-`
+`;

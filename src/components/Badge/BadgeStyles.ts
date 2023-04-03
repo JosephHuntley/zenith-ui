@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { BadgeProps } from "./Badge"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { BadgeProps } from "./Badge";
+import { ZenithContextType } from "../../utils";
 
 export const BadgeMain = styled.span<
   BadgeProps & { zenith: ZenithContextType }
@@ -56,4 +56,4 @@ export const BadgeMain = styled.span<
         ? props.color || props.zenith.status[props.status].bg
         : "none"};
   }
-`
+`;

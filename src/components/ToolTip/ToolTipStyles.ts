@@ -1,10 +1,10 @@
-import { ZenithContextType } from "../../utils"
-import styled from "styled-components"
-import { ToolTipProps } from "./ToolTip"
+import { ZenithContextType } from "../../utils";
+import styled from "styled-components";
+import { ToolTipProps } from "./ToolTip";
 
 export const Div = styled.div`
   position: relative;
-`
+`;
 
 export const ToolTipMain = styled.div<
   ToolTipProps & { zenith: ZenithContextType }
@@ -56,7 +56,7 @@ export const ToolTipMain = styled.div<
     props.position === "left"
       ? `calc(100% + ${props.arrow?.arrowSize || "10px"})`
       : ""};
-`
+`;
 
 export const ArrowUp = styled.div<ToolTipProps & { zenith: ZenithContextType }>`
   width: 0;
@@ -71,7 +71,7 @@ export const ArrowUp = styled.div<ToolTipProps & { zenith: ZenithContextType }>`
   top: calc(100%);
   left: 50%;
   transform: translateX(-50%);
-`
+`;
 
 export const ArrowLeft = styled.div<
   ToolTipProps & { zenith: ZenithContextType }
@@ -88,7 +88,7 @@ export const ArrowLeft = styled.div<
   top: 10%;
   right: -25%;
   transform: rotate(-90deg);
-`
+`;
 
 export const ArrowRight = styled.div<
   ToolTipProps & { zenith: ZenithContextType }
@@ -105,7 +105,7 @@ export const ArrowRight = styled.div<
   top: 10%;
   left: -25%;
   transform: rotate(90deg);
-`
+`;
 export const ArrowDown = styled.div<
   ToolTipProps & { zenith: ZenithContextType }
 >`
@@ -121,4 +121,4 @@ export const ArrowDown = styled.div<
   top: -30%;
   right: 50%;
   transform: rotate(180deg) translateX(-50%);
-`
+`;

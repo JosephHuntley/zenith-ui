@@ -1,11 +1,11 @@
-import styled from "styled-components"
-import { SwitchProps } from "./Switch"
+import styled from "styled-components";
+import { SwitchProps } from "./Switch";
 
 export const Label = styled.label<SwitchProps>`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-`
+`;
 
 export const SwitchButton = styled.div<SwitchProps>`
   position: relative;
@@ -28,7 +28,7 @@ export const SwitchButton = styled.div<SwitchProps>`
     background: white;
     transform: translate(0, -50%);
   }
-`
+`;
 export const Input = styled.input<SwitchProps>`
   opacity: 0;
   position: absolute;
@@ -38,4 +38,4 @@ export const Input = styled.input<SwitchProps>`
       transform: translate(100%, -50%);
     }
   }
-`
+`;

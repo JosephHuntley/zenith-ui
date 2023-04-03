@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { CarouselProps } from "./Carousel"
-import { ZenithContextType } from "../../utils"
+import styled from "styled-components";
+import { CarouselProps } from "./Carousel";
+import { ZenithContextType } from "../../utils";
 
 export const Main = styled.div<CarouselProps>`
   width: ${(props) => props.size?.width || "100%"};
@@ -30,7 +30,7 @@ export const Main = styled.div<CarouselProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`
+`;
 
 const Arrow = styled.div<CarouselProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.arrow?.size || "0.6rem"};
@@ -40,15 +40,15 @@ const Arrow = styled.div<CarouselProps & { zenith: ZenithContextType }>`
     ${(props) => props.arrow?.size || "0.6rem"} 0;
   display: inline-block;
   padding: ${(props) => props.arrow?.size || "0.6rem"};
-`
+`;
 
 export const RightArrow = styled(Arrow)`
   transform: rotate(-45deg);
-`
+`;
 
 export const LeftArrow = styled(Arrow)`
   transform: rotate(135deg);
-`
+`;
 // prettier-ignore
 export const Ellipse = styled.span<CarouselProps & { active: boolean; zenith: ZenithContextType }>`
 	width: 1px;
@@ -65,10 +65,10 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`
+`;
 
 export const Col = styled.div`
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
-`
+`;

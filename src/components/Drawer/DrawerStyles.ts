@@ -1,6 +1,6 @@
-import { ZenithContextType } from "../../utils"
-import styled from "styled-components"
-import { DrawerProps } from "./Drawer"
+import { ZenithContextType } from "../../utils";
+import styled from "styled-components";
+import { DrawerProps } from "./Drawer";
 
 export const DrawerMain = styled.section<
   DrawerProps & { zenith: ZenithContextType }
@@ -38,4 +38,4 @@ export const DrawerMain = styled.section<
   border: 1px solid
     ${(props) => props.color || props.zenith.colors.bg_secondary};
   border-radius: ${(props) => props.radius || "0.7rem"};
-`
+`;

@@ -1,7 +1,7 @@
-import { ZenithContextType } from "../../utils"
-import styled, { keyframes } from "styled-components"
-import { SkeletonProps } from "./Skeleton"
-import { TextProps } from "./SkeletonText"
+import { ZenithContextType } from "../../utils";
+import styled, { keyframes } from "styled-components";
+import { SkeletonProps } from "./Skeleton";
+import { TextProps } from "./SkeletonText";
 
 const skeletonKeyframes = keyframes`
   0% {
@@ -10,7 +10,7 @@ const skeletonKeyframes = keyframes`
   100% {
     background-position: calc(200px + 100%) 0;
   }
-`
+`;
 
 export const SkeletonDiv = styled.div<
   SkeletonProps & { zenith: ZenithContextType }
@@ -47,11 +47,11 @@ export const SkeletonDiv = styled.div<
   padding: ${(props) => props.padding?.p || ""};
 
   border-radius: ${(props) => props.radius || ".4rem"};
-`
+`;
 
 export const Inner = styled.div`
   visibility: hidden;
-`
+`;
 
 export const Text = styled.div<TextProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -80,4 +80,4 @@ export const Text = styled.div<TextProps & { zenith: ZenithContextType }>`
   border: 1px solid
     ${(props) => props.color || props.zenith.colors.bg_secondary};
   border-radius: ${(props) => props.radius || ""};
-`
+`;

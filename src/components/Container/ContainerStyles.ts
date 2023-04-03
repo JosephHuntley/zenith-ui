@@ -1,6 +1,6 @@
-import { ZenithContextType } from "../../utils"
-import styled from "styled-components"
-import { ContainerProps } from "./Container"
+import { ZenithContextType } from "../../utils";
+import styled from "styled-components";
+import { ContainerProps } from "./Container";
 
 export const Main = styled.div<ContainerProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
@@ -32,4 +32,4 @@ export const Main = styled.div<ContainerProps & { zenith: ZenithContextType }>`
   grid-template-columns: ${(props) => props.grid?.colTemplate};
   grid-template-rows: ${(props) => props.grid?.rowTemplate};
   gap: ${(props) => props.flex?.gap || props.grid?.gap};
-`
+`;

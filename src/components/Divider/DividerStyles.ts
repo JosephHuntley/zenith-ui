@@ -1,6 +1,6 @@
-import { ZenithContextType } from "../../utils"
-import styled from "styled-components"
-import type { dividerProps } from "./Divider"
+import { ZenithContextType } from "../../utils";
+import styled from "styled-components";
+import type { dividerProps } from "./Divider";
 
 export const CenterHorizontal = styled.div<
   dividerProps & { zenith: ZenithContextType }
@@ -12,7 +12,7 @@ export const CenterHorizontal = styled.div<
   align-items: center;
 
   position: relative;
-`
+`;
 
 export const DividerLineHorizontal = styled.hr<
   dividerProps & { zenith: ZenithContextType }
@@ -46,4 +46,4 @@ export const DividerLineHorizontal = styled.hr<
   opacity: ${(props) => props.opacity || "0.3"};
 
   position: relative;
-`
+`;
