@@ -8,9 +8,8 @@ export const useDarkMode = () => {
     setTheme(mode)
   }
 
-  const themeToggler = () => {
+  const themeToggler: Function = () => {
     theme === "light" ? setMode("dark") : setMode("light")
-    window.location.reload()
   }
 
   useEffect(() => {
