@@ -39,9 +39,11 @@ export const Main = styled.div<BoxProps & { zenith: ZenithContextType }>`
   gap: ${(props) => props.flex?.gap || props.grid?.gap};
 
   // Position
-  position: ${(props) => props.position?.position || "initial"}
-  top: ${(props) => props.position?.top || "0"}
-  bottom: ${(props) => props.position?.bottom || "0"}
-  left: ${(props) => props.position?.left || "0"}
-  right: ${(props) => props.position?.right || "0"}
+  position: ${(props) => props.position?.position || "initial"};
+  top: ${(props) => props.position?.top || "0"};
+  bottom: ${(props) => props.position?.bottom || "0"};
+  left: ${(props) => props.position?.left || "0"};
+  right: ${(props) => props.position?.right || "0"};
+
+  overflow:scroll;
 `

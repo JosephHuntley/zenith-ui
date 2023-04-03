@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react"
 import { ZenithContext, ZenithContextType } from "./"
+import { ThemeProvider } from "styled-components"
 
 const ZenithProvider = ({
   children,
@@ -29,7 +30,9 @@ const ZenithProvider = ({
   value?: ZenithContextType
 }) => {
   return (
-    <ZenithContext.Provider value={value}>{children}</ZenithContext.Provider>
+    <ZenithContext.Provider value={value}>
+      <ThemeProvider theme={{}}>{children}</ThemeProvider>
+    </ZenithContext.Provider>
   )
 }
 
