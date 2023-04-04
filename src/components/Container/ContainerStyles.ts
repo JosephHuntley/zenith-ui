@@ -26,7 +26,7 @@ export const Main = styled.div<ContainerProps & { zenith: ZenithContextType }>`
   border-radius: ${(props) => props.radius || ""};
 
   display: ${(props) =>
-    props.flex ? "flex" : props.grid ? "grid" : "initial"};
+    props.flex ? "flex" : props.grid ? "grid" : "block"};
   flex-direction: ${(props) => props.flex?.direction};
   justify-content: ${(props) => props.flex?.justify};
   grid-template-columns: ${(props) => props.grid?.colTemplate};

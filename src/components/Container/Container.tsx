@@ -27,7 +27,7 @@ const Container = (props: ContainerProps) => {
   const { center, children } = props
   return (
     <Main zenith={zenith} {...props}>
-      {center ? <Center>{children}</Center> : <> {children}</>}
+      {children}
     </Main>
   )
 }
