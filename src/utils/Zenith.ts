@@ -2,6 +2,8 @@ import { ReactNode } from "react"
 
 type ZenithProps = {
   children?: ReactNode
+  className?: string
+  onClick?: () => any
   size?: { width?: string; height?: string }
   color?: string
   font?: { size?: string; color?: string }
