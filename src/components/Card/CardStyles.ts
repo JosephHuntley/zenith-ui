@@ -69,9 +69,7 @@ export const Main = styled.div<CardProps & { zenith: ZenithContextType }>`
   }
 `;
 
-export const Header = styled.header<
-  HeaderProps & { zenith: ZenithContextType }
->`
+export const Header = styled.header<HeaderProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || ""};
   height: ${(props) => props.size?.height || ""};
 
@@ -126,10 +124,8 @@ export const Body = styled.div<BodyProps & { zenith: ZenithContextType }>`
   flex-direction: column;
 `;
 
-export const Footer = styled.footer<
-  FooterProps & { zenith: ZenithContextType }
->`
-  width: ${(props) => props.size?.width || ""};
+export const Footer = styled.footer<FooterProps & { zenith: ZenithContextType }>`
+  width: ${(props) => props.size?.width || "100%"};
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || "2rem"};
