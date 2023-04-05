@@ -26,6 +26,7 @@ export type BoxProps = ZenithProps & {
     bottom?: string
     left?: string
     right?: string
+    z?: string
   }
 }
 

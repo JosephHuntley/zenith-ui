@@ -9,6 +9,8 @@ export const Main = styled.div<BoxProps & { zenith: ZenithContextType }>`
   font-size: ${(props) => props.font?.size || " "};
   color: ${(props) => props.font?.color || " "};
 
+  background-color:${(props) => props.color || ""};
+
   // Margin
   margin-left: ${(props) => props.margin?.left || props.margin?.x || ""};
   margin-right: ${(props) => props.margin?.right || props.margin?.x || ""};
@@ -44,6 +46,8 @@ export const Main = styled.div<BoxProps & { zenith: ZenithContextType }>`
   bottom: ${(props) => props.position?.bottom || "0"};
   left: ${(props) => props.position?.left || "0"};
   right: ${(props) => props.position?.right || "0"};
+
+  z-index:${props => props.position?.z || ''};
 
   overflow:scroll;
 `
