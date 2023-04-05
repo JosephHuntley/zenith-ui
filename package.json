@@ -2,12 +2,19 @@
   "name": "zenith-ui",
   "version": "0.0.6",
   "description": "Responsive and accessible React UI components built with React and styled-components",
+  "keywords": [
+    "React",
+    "UI",
+    "Component-Library",
+    "Design-System"
+  ],
   "scripts": {
     "rollup": "prettier --write . && rollup -c",
-    "pack": "prettier --write . && rollup -c && npm pack --pack-destination ~"
+    "pack": "prettier --write . && rollup -c && npm pack --pack-destination ../zenith-ui-documentation-1"
   },
-  "author": "Joseph Huntley<Joseph.Huntley@outlook.com>",
+  "author": "Joseph Huntley<Joseph.Huntley@outlook.com> (https://josephhuntley.netlify.app)",
   "license": "MIT",
+  "homepage": "https://zenith-ui-documentation.vercel.app/",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
