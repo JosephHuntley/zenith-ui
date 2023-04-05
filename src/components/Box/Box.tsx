@@ -21,7 +21,7 @@ export type BoxProps = ZenithProps & {
     gap?: string
   }
   position?: {
-    position: "absolute" | "relative"
+    position: "absolute" | "relative" | "sticky" | "fixed"
     top?: string
     bottom?: string
     left?: string
