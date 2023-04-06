@@ -7,7 +7,6 @@ import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import { ZenithContextType } from "../../utils";
 
 export const Main = styled.section<AccordionProps & { zenith: ZenithContextType }>`
-  min-width: ${(props) => props.size?.width || "40rem"};
   width: ${(props) => props.size?.width || "40rem"};
   height: ${(props) => props.size?.height || ""};
 
