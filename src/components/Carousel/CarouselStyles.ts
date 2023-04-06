@@ -7,7 +7,7 @@ export const Main = styled.div<CarouselProps>`
   height: ${(props) => props.size?.height || "100%"};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) => props.color || "transparent"};
 

@@ -27,7 +27,7 @@ export const OuterSquare = styled.div<SquareProps & { zenith: ZenithContextType 
   height: ${(props) => props.fullSize};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) => props.color || "transparent"};
 
@@ -51,7 +51,7 @@ export const OuterCircle = styled.div<CircleProps & { zenith: ZenithContextType 
   height: ${(props) => props.fullSize};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) => props.color || "transparent"};
 

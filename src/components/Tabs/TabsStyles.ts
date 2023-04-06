@@ -11,7 +11,7 @@ export const Main = styled.div<TabsProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) =>
     props.color || props.zenith.colors.bg_secondary};
@@ -40,7 +40,7 @@ export const List = styled.ul<ListProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) =>
     props.color || props.zenith.colors.bg_secondary};
@@ -111,7 +111,7 @@ export const Panels = styled.div<PanelsProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) =>
     props.color || props.zenith.colors.bg_secondary};
@@ -137,7 +137,7 @@ export const Panel = styled.div<PanelProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) =>
     props.color || props.zenith.colors.bg_secondary};

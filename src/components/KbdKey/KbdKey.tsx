@@ -9,7 +9,7 @@ const Key = styled.span<KeyProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) => props.color || props.zenith.colors.bg_primary};
 

@@ -10,7 +10,7 @@ export const MenuMain = styled.div<MenuProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   // Margin
   margin: ${(props) => props.margin?.m || ""};
@@ -37,7 +37,7 @@ export const List = styled.ul<MenuListProps & { zenith: ZenithContextType }>`
   min-width: ${(props) => props.size?.width || "15rem"};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) =>
     props.color || props.zenith.colors.bg_secondary};
@@ -106,7 +106,7 @@ export const Item = styled.li<MenuItemProps & { zenith: ZenithContextType }>`
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || " "};
-  color: ${(props) => props.font?.color || " "};
+  color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
 
   background-color: ${(props) =>
     props.color || props.zenith.colors.bg_secondary};
