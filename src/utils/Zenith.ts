@@ -70,6 +70,7 @@ export const style = css<any>`
 
   font-size: ${(props) => props.font?.size || " "};
   color: ${(props) => props.font?.color || props.zenith.colors.text_primary};
+  background-color: ${(props) => props.color || props.zenith.colors.bg_primary};
 
   // Margin
   margin-left: ${(props) => props.margin?.left || props.margin?.x || ""};
