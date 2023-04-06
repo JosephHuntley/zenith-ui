@@ -6,9 +6,8 @@ import { PanelProps } from "./AccordionPanel";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import { ZenithContextType } from "../../utils";
 
-export const Main = styled.section<
-  AccordionProps & { zenith: ZenithContextType }
->`
+export const Main = styled.section<AccordionProps & { zenith: ZenithContextType }>`
+  min-width: ${(props) => props.size?.width || "40rem"};
   width: ${(props) => props.size?.width || "40rem"};
   height: ${(props) => props.size?.height || ""};
 
@@ -35,6 +34,7 @@ export const Main = styled.section<
   border: 1px solid
     ${(props) => props.color || props.zenith.colors.bg_secondary};
   border-radius: ${(props) => props.radius || "0.7rem"};
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -62,12 +62,11 @@ export const Item = styled.article<ItemProps & { zenith: ZenithContextType }>`
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
 `;
 
-export const Header = styled.header<
-  HeaderProps & { zenith: ZenithContextType }
->`
+export const Header = styled.header<HeaderProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "100%"};
   height: ${(props) => props.size?.height || ""};
 
@@ -114,17 +113,13 @@ export const Panel = styled.div<PanelProps & { zenith: ZenithContextType }>`
   flex-direction: column;
 `;
 
-export const UpArrow = styled(AiOutlineUp)<
-  HeaderProps & { zenith: ZenithContextType }
->`
+export const UpArrow = styled(AiOutlineUp)<HeaderProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.icon?.size || "1.5rem"};
   height: ${(props) => props.icon?.size || "1.5rem"};
   color: ${(props) => props.icon?.color || props.zenith.colors.text_primary};
 `;
 
-export const DownArrow = styled(AiOutlineDown)<
-  HeaderProps & { zenith: ZenithContextType }
->`
+export const DownArrow = styled(AiOutlineDown)<HeaderProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.icon?.size || "1.5rem"};
   height: ${(props) => props.icon?.size || "1.5rem"};
   color: ${(props) => props.icon?.color || props.zenith.colors.text_primary};
