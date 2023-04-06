@@ -5,21 +5,7 @@ import { Center } from "../Center"
 
 export type ContainerProps = ZenithProps & {
   center?: boolean
-  flex?: {
-    direction?: "row" | "column"
-    gap?: string
-    justify?:
-      | "space-around"
-      | "space-between"
-      | "center"
-      | "flex-start"
-      | "flex-end"
-  }
-  grid?: {
-    colTemplate?: string
-    rowTemplate?: string
-    gap?: string
-  }
+  overflow?: "scroll" | "hidden"
 }
 
 const Container = (props: ContainerProps) => {
