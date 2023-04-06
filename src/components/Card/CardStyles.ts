@@ -125,7 +125,7 @@ export const Body = styled.div<BodyProps & { zenith: ZenithContextType }>`
 `;
 
 export const Footer = styled.footer<FooterProps & { zenith: ZenithContextType }>`
-  width: ${(props) => props.size?.width || "100%"};
+  width: ${(props) => props.size?.width || `calc(100% - ${props.margin?.m || '0px'})`};
   height: ${(props) => props.size?.height || ""};
 
   font-size: ${(props) => props.font?.size || "2rem"};
