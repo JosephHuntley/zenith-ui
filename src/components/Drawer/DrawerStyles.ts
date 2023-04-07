@@ -33,6 +33,7 @@ ${style}
   height: ${(props) => props.md?.size?.height || "80vh"};
   top: ${props => props.top || '0'};
   right: 0;
+  position: fixed;
   
   margin: ${(props) => props.md?.margin?.m || "0"};
   }
@@ -41,7 +42,8 @@ ${style}
   height: ${(props) => props.sm?.size?.height || props.md?.size?.height};
   top: ${props => props.top || '0'};
   right: 0;
-  left:0;
+  position: fixed;
+  
   margin: ${(props) => props.sm?.margin?.m || props.md?.margin?.m};
   }
   @media ${props => props.zenith.breakpoints.xs} {
@@ -49,7 +51,7 @@ ${style}
   height: ${(props) => props.xs?.size?.height || props.sm?.size?.height};
   top: ${props => props.top || '0'};
   right: 0;
-  left:0;
+  position: fixed;
   margin: ${(props) => props.xs?.margin?.m || props.sm?.margin?.m};
   }
 `;
