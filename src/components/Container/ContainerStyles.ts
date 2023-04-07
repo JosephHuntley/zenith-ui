@@ -6,4 +6,6 @@ import { style } from "../../utils/Zenith";
 export const Main = styled.div<ContainerProps & { zenith: ZenithContextType }>`
   ${style}
   overflow: ${props => props.overflow || 'visible'};
+  background-color: ${props => props.color || 'transparent'};
+  
 `;
