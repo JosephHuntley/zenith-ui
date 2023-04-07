@@ -99,10 +99,10 @@ export const style = css<any>`
 
   @media ${(props) => props.zenith.breakpoints.tablet} {
     width: ${(props) => props.md?.size?.width || props.size?.width};
-    height: ${(props) => props.md?.size?.height || props.size?.width};
+    height: ${(props) => props.md?.size?.height || props.size?.height};
 
-    font-size: ${(props) => props.md?.font?.size || props.font?.color};
-    color: ${(props) => props.md?.font?.color || props.font?.size};
+    font-size: ${(props) => props.md?.font?.size || props.font?.size};
+    color: ${(props) => props.md?.font?.color || props.font?.color};
 
     //  Margin
     margin-left: ${(props) =>
@@ -186,10 +186,10 @@ export const style = css<any>`
   }
   @media ${(props) => props.zenith.breakpoints.phone} {
     width: ${(props) => props.sm?.size?.width || props.size?.width};
-    height: ${(props) => props.sm?.size?.height || props.size?.width};
+    height: ${(props) => props.sm?.size?.height || props.size?.height};
 
-    font-size: ${(props) => props.sm?.font?.size || props.font?.color};
-    color: ${(props) => props.sm?.font?.color || props.font?.size};
+    font-size: ${(props) => props.sm?.font?.size || props.font?.size};
+    color: ${(props) => props.sm?.font?.color || props.font?.color};
 
     //  Margin
     margin-left: ${(props) =>
@@ -273,10 +273,10 @@ export const style = css<any>`
   }
   @media ${(props) => props.zenith.breakpoints.xs} {
     width: ${(props) => props.xs?.size?.width || props.size?.width};
-    height: ${(props) => props.xs?.size?.height || props.size?.width};
+    height: ${(props) => props.xs?.size?.height || props.size?.height};
 
-    font-size: ${(props) => props.xs?.font?.size || props.font?.color};
-    color: ${(props) => props.xs?.font?.color || props.font?.size};
+    font-size: ${(props) => props.xs?.font?.size || props.font?.size};
+    color: ${(props) => props.xs?.font?.color || props.font?.color};
 
     //  Margin
     margin-left: ${(props) =>
