@@ -51,6 +51,91 @@ export const Main = styled.div<CardProps & { zenith: ZenithContextType }>`
     background-color: ${(props) =>
       props.variant === "hover" ? "transparent" : "none"};
   }
+
+  @media ${props => props.zenith.breakpoints.tablet} {
+    height: ${(props) =>
+    props.size === "responsive"
+      ? "none"
+      : props.size === "lg"
+      ? "45rem"
+      : props.size === "md"
+      ? "37rem"
+      : "27rem"};
+  width: ${(props) =>
+    props.size === "responsive"
+      ? "none"
+      : props.size === "lg"
+      ? "38rem"
+      : props.size === "md"
+      ? "30rem"
+      : "23rem"};
+display: grid;
+${(props) =>
+    props.size === "responsive"
+      ? "grid-template-rows: 1fr 2fr 1 fr;"
+      : props.size === "lg"
+      ? "grid-template-rows: 0.3fr 2fr 0.3fr;"
+      : props.size === "md"
+      ? "grid-template-rows: 0.5fr 2fr 0.5fr;"
+      : "grid-template-rows: 0.5fr 2fr 0.5fr;"}
+      
+  }
+  @media ${props => props.zenith.breakpoints.phone} {
+    height: ${(props) =>
+    props.size === "responsive"
+      ? "none"
+      : props.size === "lg"
+      ? "45rem"
+      : props.size === "md"
+      ? "37rem"
+      : "27rem"};
+  width: ${(props) =>
+    props.size === "responsive"
+      ? "none"
+      : props.size === "lg"
+      ? "38rem"
+      : props.size === "md"
+      ? "30rem"
+      : "23rem"};
+display: grid;
+${(props) =>
+    props.size === "responsive"
+      ? "grid-template-rows: 1fr 2fr 1 fr;"
+      : props.size === "lg"
+      ? "grid-template-rows: 0.3fr 2fr 0.3fr;"
+      : props.size === "md"
+      ? "grid-template-rows: 0.5fr 2fr 0.5fr;"
+      : "grid-template-rows: 0.5fr 2fr 0.5fr;"}
+      
+  }
+  @media ${props => props.zenith.breakpoints.xs} {
+    height: ${(props) =>
+    props.size === "responsive"
+      ? "none"
+      : props.size === "lg"
+      ? "45rem"
+      : props.size === "md"
+      ? "37rem"
+      : "27rem"};
+  width: ${(props) =>
+    props.size === "responsive"
+      ? "none"
+      : props.size === "lg"
+      ? "38rem"
+      : props.size === "md"
+      ? "30rem"
+      : "23rem"};
+display: grid;
+${(props) =>
+    props.size === "responsive"
+      ? "grid-template-rows: 1fr 2fr 1 fr;"
+      : props.size === "lg"
+      ? "grid-template-rows: 0.3fr 2fr 0.3fr;"
+      : props.size === "md"
+      ? "grid-template-rows: 0.5fr 2fr 0.5fr;"
+      : "grid-template-rows: 0.5fr 2fr 0.5fr;"}
+      
+  }
 `;
 
 export const Header = styled.header<HeaderProps & { zenith: ZenithContextType }>`
