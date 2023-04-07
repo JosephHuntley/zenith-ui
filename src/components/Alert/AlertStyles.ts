@@ -26,7 +26,8 @@ export const Main = styled.div<AlertProps & {zenith:ZenithContextType}>`
 	}
 
 	@media ${(props) => props.zenith.breakpoints.tablet} {
-		margin-top: 10rem;
+		top:${props => props.top || '10rem'};
+		display: flex;
 		max-width: 100vw;
 		width: 75vw;
 		font-size: 3rem;
