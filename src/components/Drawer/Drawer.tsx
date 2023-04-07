@@ -5,6 +5,7 @@ import { DrawerMain } from "./DrawerStyles"
 export type DrawerProps = ZenithProps & {
   isOpen: boolean
   position?: "left" | "right"
+  top?: string
 }
 
 const Drawer = (props: DrawerProps) => {
