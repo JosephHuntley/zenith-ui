@@ -1,2 +1,3 @@
 export * from "./useDarkMode"
-export * from "./useWindowSize"
+import useWindowSize from "./useWindowSize"
+export { useWindowSize }
