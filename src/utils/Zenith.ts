@@ -185,59 +185,59 @@ export const style = css<any>`
       props.grid?.gap};
   }
   @media ${(props) => props.zenith.breakpoints.phone} {
-    width: ${(props) => props.sm?.size?.width || props.size?.width};
-    height: ${(props) => props.sm?.size?.height || props.size?.height};
+    width: ${(props) => props.sm?.size?.width || props.md?.size?.width};
+    height: ${(props) => props.sm?.size?.height || props.md?.size?.height};
 
-    font-size: ${(props) => props.sm?.font?.size || props.font?.size};
-    color: ${(props) => props.sm?.font?.color || props.font?.color};
+    font-size: ${(props) => props.sm?.font?.size || props.md?.font?.size};
+    color: ${(props) => props.sm?.font?.color || props.md?.font?.color};
 
     //  Margin
     margin-left: ${(props) =>
       props.sm?.margin?.left ||
       props.sm?.margin?.x ||
-      props.margin?.left ||
-      props.margin?.x};
+      props.md?.margin?.left ||
+      props.md?.margin?.x};
     margin-right: ${(props) =>
       props.sm?.margin?.right ||
       props.sm?.margin?.x ||
-      props.margin?.right ||
-      props.margin?.x};
+      props.md?.margin?.right ||
+      props.md?.margin?.x};
     margin-top: ${(props) =>
       props.sm?.margin?.top ||
       props.sm?.margin?.y ||
-      props.margin?.top ||
-      props.margin?.y};
+      props.md?.margin?.top ||
+      props.md?.margin?.y};
     margin-bottom: ${(props) =>
       props.sm?.margin?.bottom ||
       props.sm?.margin?.y ||
-      props.margin?.bottom ||
-      props.margin?.y};
-    margin: ${(props) => props.sm?.margin?.m || props.margin?.m};
+      props.md?.margin?.bottom ||
+      props.md?.margin?.y};
+    margin: ${(props) => props.sm?.margin?.m || props.md?.margin?.m};
 
     // Padding
     padding-left: ${(props) =>
       props.sm?.padding?.left ||
       props.sm?.padding?.x ||
-      props.padding?.left ||
-      props.padding?.x};
+      props.md?.padding?.left ||
+      props.md?.padding?.x};
     padding-right: ${(props) =>
       props.sm?.padding?.right ||
       props.sm?.padding?.x ||
-      props.padding?.right ||
-      props.padding?.x};
+      props.md?.padding?.right ||
+      props.md?.padding?.x};
     padding-top: ${(props) =>
       props.sm?.padding?.top ||
       props.sm?.padding?.y ||
-      props.padding?.top ||
-      props.padding?.y};
+      props.md?.padding?.top ||
+      props.md?.padding?.y};
     padding-bottom: ${(props) =>
       props.sm?.padding?.bottom ||
       props.sm?.padding?.y ||
-      props.padding?.bottom ||
-      props.padding?.y};
-    padding: ${(props) => props.sm?.padding?.p || props.padding?.m};
+      props.md?.padding?.bottom ||
+      props.md?.padding?.y};
+    padding: ${(props) => props.sm?.padding?.p || props.md?.padding?.m};
 
-    border-radius: ${(props) => props.sm?.radius || props.radius};
+    border-radius: ${(props) => props.sm?.radius || props.md?.radius};
 
     display: ${(props) =>
       props.sm?.flex
@@ -250,81 +250,81 @@ export const style = css<any>`
         ? "grid"
         : "block"};
     flex-direction: ${(props) =>
-      props.sm?.flex?.direction || props.flex?.direction};
+      props.sm?.flex?.direction || props.md?.flex?.direction};
     justify-content: ${(props) =>
       props.sm?.flex?.justify ||
       props.sm?.grid?.justify ||
-      props.flex?.justify ||
-      props.grid?.justify};
+      props.md?.flex?.justify ||
+      props.md?.grid?.justify};
     align-items: ${(props) =>
       props.sm?.flex?.align ||
       props.sm?.grid?.align ||
-      props.flex?.align ||
-      props.grid?.align};
+      props.md?.flex?.align ||
+      props.md?.grid?.align};
     grid-template-columns: ${(props) =>
-      props.sm?.grid?.colTemplate || props.grid?.colTemplate};
+      props.sm?.grid?.colTemplate || props.md?.grid?.colTemplate};
     grid-template-rows: ${(props) =>
-      props.sm?.grid?.rowTemplate || props.grid?.rowTemplate};
+      props.sm?.grid?.rowTemplate || props.md?.grid?.rowTemplate};
     gap: ${(props) =>
       props.sm?.flex?.gap ||
       props.sm?.grid?.gap ||
-      props.flex?.gap ||
-      props.grid?.gap};
+      props.md?.flex?.gap ||
+      props.md?.grid?.gap};
   }
   @media ${(props) => props.zenith.breakpoints.xs} {
-    width: ${(props) => props.xs?.size?.width || props.size?.width};
-    height: ${(props) => props.xs?.size?.height || props.size?.height};
+    width: ${(props) => props.xs?.size?.width || props.sm?.size?.width};
+    height: ${(props) => props.xs?.size?.height || props.sm?.size?.height};
 
-    font-size: ${(props) => props.xs?.font?.size || props.font?.size};
-    color: ${(props) => props.xs?.font?.color || props.font?.color};
+    font-size: ${(props) => props.xs?.font?.size || props.sm?.font?.size};
+    color: ${(props) => props.xs?.font?.color || props.sm?.font?.color};
 
     //  Margin
     margin-left: ${(props) =>
       props.xs?.margin?.left ||
       props.xs?.margin?.x ||
-      props.margin?.left ||
-      props.margin?.x};
+      props.sm?.margin?.left ||
+      props.sm?.margin?.x};
     margin-right: ${(props) =>
       props.xs?.margin?.right ||
       props.xs?.margin?.x ||
-      props.margin?.right ||
-      props.margin?.x};
+      props.sm?.margin?.right ||
+      props.sm?.margin?.x};
     margin-top: ${(props) =>
       props.xs?.margin?.top ||
       props.xs?.margin?.y ||
-      props.margin?.top ||
-      props.margin?.y};
+      props.sm?.margin?.top ||
+      props.sm?.margin?.y};
     margin-bottom: ${(props) =>
       props.xs?.margin?.bottom ||
       props.xs?.margin?.y ||
-      props.margin?.bottom ||
-      props.margin?.y};
-    margin: ${(props) => props.xs?.margin?.m || props.margin?.m};
+      props.sm?.margin?.bottom ||
+      props.sm?.margin?.y};
+    margin: ${(props) => props.xs?.margin?.m || props.sm?.margin?.m};
 
     // Padding
     padding-left: ${(props) =>
       props.xs?.padding?.left ||
       props.xs?.padding?.x ||
-      props.padding?.left ||
-      props.padding?.x};
+      props.sm?.padding?.left ||
+      props.sm?.padding?.x};
     padding-right: ${(props) =>
       props.xs?.padding?.right ||
       props.xs?.padding?.x ||
-      props.padding?.right ||
-      props.padding?.x};
+      props.sm?.padding?.right ||
+      props.sm?.padding?.x};
     padding-top: ${(props) =>
       props.xs?.padding?.top ||
       props.xs?.padding?.y ||
-      props.padding?.top ||
-      props.padding?.y};
+      props.sm?.padding?.top ||
+      props.sm?.padding?.y};
     padding-bottom: ${(props) =>
       props.xs?.padding?.bottom ||
       props.xs?.padding?.y ||
-      props.padding?.bottom ||
-      props.padding?.y};
-    padding: ${(props) => props.xs?.padding?.p || props.padding?.m};
+      props.sm?.padding?.bottom ||
+      props.sm?.padding?.y};
+    padding: ${(props) => props.xs?.padding?.p || props.sm?.padding?.m};
 
-    border-radius: ${(props) => props.xs?.radius || props.radius};
+    border-radius: ${(props) => props.xs?.radius || props.sm?.radius};
 
     display: ${(props) =>
       props.xs?.flex
@@ -337,26 +337,26 @@ export const style = css<any>`
         ? "grid"
         : "block"};
     flex-direction: ${(props) =>
-      props.xs?.flex?.direction || props.flex?.direction};
+      props.xs?.flex?.direction || props.sm?.flex?.direction};
     justify-content: ${(props) =>
       props.xs?.flex?.justify ||
       props.xs?.grid?.justify ||
-      props.flex?.justify ||
-      props.grid?.justify};
+      props.sm?.flex?.justify ||
+      props.sm?.grid?.justify};
     align-items: ${(props) =>
       props.xs?.flex?.align ||
       props.xs?.grid?.align ||
-      props.flex?.align ||
-      props.grid?.align};
+      props.sm?.flex?.align ||
+      props.sm?.grid?.align};
     grid-template-columns: ${(props) =>
-      props.xs?.grid?.colTemplate || props.grid?.colTemplate};
+      props.xs?.grid?.colTemplate || props.sm?.grid?.colTemplate};
     grid-template-rows: ${(props) =>
-      props.xs?.grid?.rowTemplate || props.grid?.rowTemplate};
+      props.xs?.grid?.rowTemplate || props.sm?.grid?.rowTemplate};
     gap: ${(props) =>
       props.xs?.flex?.gap ||
       props.xs?.grid?.gap ||
-      props.flex?.gap ||
-      props.grid?.gap};
+      props.sm?.flex?.gap ||
+      props.sm?.grid?.gap};
   }
 `
 

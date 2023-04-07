@@ -13,7 +13,7 @@ ${style}
   //Padding
   padding: ${(props) => props.padding?.p || "1rem"};
 
-  position: absolute;
+  position: fixed;
   top: -10px;
 
 
@@ -37,19 +37,19 @@ ${style}
   margin: ${(props) => props.md?.margin?.m || "0"};
   }
   @media ${props => props.zenith.breakpoints.phone} {
-  width: ${(props) => props.sm?.size?.width || "75vw"};
-  height: ${(props) => props.sm?.size?.height || "80vh"};
+  width: ${(props) => props.sm?.size?.width || props.md?.size?.width};
+  height: ${(props) => props.sm?.size?.height || props.md?.size?.height};
   top: ${props => props.top || '0'};
   right: 0;
   left:0;
-  margin: ${(props) => props.sm?.margin?.m || "0"};
+  margin: ${(props) => props.sm?.margin?.m || props.md?.margin?.m};
   }
   @media ${props => props.zenith.breakpoints.xs} {
-  width: ${(props) => props.xs?.size?.width || "75vw"};
-  height: ${(props) => props.xs?.size?.height || "80vh"};
+  width: ${(props) => props.xs?.size?.width || props.sm?.size?.width};
+  height: ${(props) => props.xs?.size?.height || props.sm?.size?.height};
   top: ${props => props.top || '0'};
   right: 0;
   left:0;
-  margin: ${(props) => props.xs?.margin?.m || "0"};
+  margin: ${(props) => props.xs?.margin?.m || props.sm?.margin?.m};
   }
 `;
