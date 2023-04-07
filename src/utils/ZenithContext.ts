@@ -30,9 +30,9 @@ export const ZenithContext = createContext<ZenithContextType>({
   },
 
   breakpoints: {
-    xs: "screen and (max-width: 640px)",
-    phone: "screen and (max-width: 768px)",
-    tablet: "screen and (max-width: 1024px)",
+    xs: "screen and (max-width: 300px)",
+    phone: "screen and (max-width: 400px)",
+    tablet: "screen and (max-width: 800px)",
     laptop: "screen and (max-width: 1280px)",
   },
   status: {
