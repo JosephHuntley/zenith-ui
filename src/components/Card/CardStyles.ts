@@ -8,6 +8,7 @@ import { style } from "../../utils/Zenith";
 
 export const Main = styled.div<CardProps & { zenith: ZenithContextType }>`
   ${style}
+  border-radius: ${props => props.radius || '1rem'};
   height: ${(props) =>
     props.size === "responsive"
       ? "none"
@@ -53,7 +54,7 @@ export const Main = styled.div<CardProps & { zenith: ZenithContextType }>`
 `;
 
 export const Header = styled.header<HeaderProps & { zenith: ZenithContextType }>`
-  
+  border-radius: ${props => props.radius || '1rem'};
   font-size: ${(props) => props.font?.size || "3rem"};
   background-color: ${(props) => props.color || "transparent"};
   padding: ${(props) => props.padding?.p || "1rem"};
@@ -70,6 +71,7 @@ export const Body = styled.div<BodyProps & { zenith: ZenithContextType }>`
 
 export const Footer = styled.footer<FooterProps & { zenith: ZenithContextType }>`
 ${style}
+border-radius: ${props => props.radius || '1rem'};
   width: ${(props) => props.size?.width || `calc(100% - ${props.margin?.m || '0px'})`};
   
   font-size: ${(props) => props.font?.size || "2rem"};
