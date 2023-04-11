@@ -53,6 +53,7 @@ type ZenithProps = defaultProps & {
   children?: ReactNode
   className?: string
   onClick?: () => any
+  zIndex?: string
 
   md?: defaultProps
   sm?: defaultProps
@@ -67,6 +68,8 @@ type DisabledType = {
 export const style = css<any>`
   width: ${(props) => props.size?.width || ""};
   height: ${(props) => props.size?.height || ""};
+
+  z-index: ${(props) => props.zIndex};
 
   font-size: ${(props) => props.font?.size || " "};
   color: ${(props) => props.font?.color || props.zenith.colors.text_primary};

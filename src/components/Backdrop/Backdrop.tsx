@@ -3,7 +3,6 @@ import { ZenithContext, ZenithContextType, ZenithProps } from "../../utils"
 import styled from "styled-components"
 
 type BackdropProps = ZenithProps & {
-  onClick: () => any
   isOpen: boolean
 }
 
@@ -12,7 +11,7 @@ const BackdropMain = styled.div<BackdropProps & { zenith: ZenithContextType }>`
   width: ${(props) => props.size?.width || "100vw"};
   height: ${(props) => props.size?.height || "100%"};
   position: absolute;
-  z-index: 1;
+  z-index: ${(props) => props.zIndex || "12"};
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
